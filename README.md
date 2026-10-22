@@ -1,2 +1,2 @@
 # Para-minha-amada-alana
-Repositório criado para a Alana
+Repositório criado para a Alana…
