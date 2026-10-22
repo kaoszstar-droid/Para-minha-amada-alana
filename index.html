@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080509">
+<title>Para minha Alana 💗</title>
+<style>
+:root{--pink:#ff5c9a;--hot:#ff2f81;--soft:#ffc0da;--bg:#080509}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;overflow-x:hidden;background:radial-gradient(ellipse at 50% 40%,#26101c 0%,#100910 45%,#050407 100%);color:#ffe7f0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;text-align:center}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.12;background:repeating-linear-gradient(0deg,transparent 0 3px,#ff9abe 4px 5px)}
+#stars,.love-rain{position:fixed;inset:0;overflow:hidden;pointer-events:none}
+.star{position:absolute;color:#ff8fba;animation:twinkle 2.2s ease-in-out infinite alternate;text-shadow:0 0 12px #ff3d8c}
+@keyframes twinkle{from{opacity:.2;transform:scale(.7) rotate(0)}to{opacity:1;transform:scale(1.25) rotate(18deg)}}
+.love{position:absolute;white-space:nowrap;color:#ff4f91;font-size:clamp(12px,3vw,18px);opacity:0;animation:floatUp linear infinite;text-shadow:0 0 9px #ff2f81}
+@keyframes floatUp{0%{transform:translateY(110vh) rotate(-8deg);opacity:0}12%{opacity:.8}88%{opacity:.7}100%{transform:translateY(-15vh) rotate(8deg);opacity:0}}
+main{position:relative;z-index:2;width:min(100%,760px);margin:auto;padding:24px 20px 70px}
+.kicker{color:#d78ba8;letter-spacing:.22em;font-size:11px;margin:20px 0 12px}
+h1{font-family:Georgia,serif;font-weight:normal;font-size:clamp(30px,8vw,52px);color:#ff8fba;margin:0;text-shadow:0 0 22px #ff2f8166}
+.subtitle{color:#d7a6b8;font-size:13px;line-height:1.8;margin:12px auto 22px;max-width:450px}
+.heart-wrap{width:min(76vw,390px);margin:0 auto;position:relative;filter:drop-shadow(0 0 18px #ff3b8970);animation:bob 3.5s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.kitty{width:100%;height:auto;overflow:visible}
+.kitty-line{fill:#fffdfd;stroke:#080608;stroke-width:8;stroke-linecap:round;stroke-linejoin:round}
+.eye{fill:#ff3d86;animation:blink 4s infinite;transform-box:fill-box;transform-origin:center}
+@keyframes blink{0%,43%,47%,100%{transform:scaleY(1)}45%{transform:scaleY(.12)}}
+.bow{fill:#ff5c9a;stroke:#ffb6d5;stroke-width:4;stroke-linejoin:round}
+.blush{fill:#ff6ca7;opacity:.75}
+.heart{position:absolute;color:#ff76ad;font-size:24px;animation:heartPulse 1.4s ease-in-out infinite}
+.heart.one{left:2%;top:22%}.heart.two{right:0;top:35%;animation-delay:.5s}.heart.three{right:12%;bottom:12%;animation-delay:.8s}
+@keyframes heartPulse{50%{transform:scale(1.35);text-shadow:0 0 16px #ff2f81}}
+.type{font-size:clamp(13px,3.5vw,16px);color:#ff9fc4;line-height:1.9;min-height:30px;margin:10px auto 25px}
+button{font:inherit;color:#fff0f6;border:1px solid #ff6fa5;background:linear-gradient(135deg,#ff4b91,#b51d62);padding:14px 22px;border-radius:999px;box-shadow:0 0 25px #ff3c8355;cursor:pointer;transition:transform .2s,box-shadow .2s}
+button:active{transform:scale(.96)}
+button:hover{box-shadow:0 0 35px #ff3c83a0}
+#letter{display:none;text-align:left;margin:28px auto 0;padding:24px 21px;max-width:590px;border:1px solid #a94470;border-radius:18px;background:#120a11dd;box-shadow:0 0 35px #ff3c8320;line-height:1.9;color:#f4c8d9;animation:reveal .8s ease both}
+#letter.show{display:block}
+@keyframes reveal{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+#letter h2{text-align:center;font-family:Georgia,serif;font-weight:normal;color:#ff8fba;font-size:27px}
+#letter p{margin:15px 0}
+.signature{text-align:center;color:#ff8fba;font-size:18px}
+.footer{margin-top:35px;font-size:10px;color:#876073;letter-spacing:.12em}
+.sparkle{display:inline-block;animation:twinkle 1.5s infinite alternate}
+
+.falling{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:1}
+.fall-item{position:absolute;top:-12vh;opacity:0;color:#ff78ae;text-shadow:0 0 12px #ff3b89;animation:fallDown linear infinite;will-change:transform}
+.fall-item.bow{filter:drop-shadow(0 0 7px #ff4e91);font-size:clamp(18px,4vw,30px)}
+.fall-item.heart{font-size:clamp(15px,3vw,25px)}
+@keyframes fallDown{0%{transform:translate3d(0,-10vh,0) rotate(0deg);opacity:0}10%{opacity:.85}50%{transform:translate3d(24px,50vh,0) rotate(150deg);opacity:.75}90%{opacity:.65}100%{transform:translate3d(-20px,115vh,0) rotate(330deg);opacity:0}}
+#typed{transition:opacity .3s ease}
+#letter{position:relative;z-index:3;overflow-wrap:anywhere}
+#openBtn:disabled{opacity:.85;cursor:default}
+
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}}
+</style>
+<noscript><style>#letter{display:block!important}#openBtn{display:none}</style></noscript>
+</head>
+<body>
+<div id="stars"></div><div class="love-rain" id="rain"></div><div class="falling" id="falling"></div>
+<main>
+  <div class="kicker">✦ UM CANTINHO FEITO SÓ PRA VOCÊ ✦</div>
+  <h1>Alana, meu amor 💗</h1>
+  <p class="subtitle">se eu pudesse transformar o que sinto em alguma coisa… acho que seria rosa, brilharia no escuro e teria um lacinho 🎀</p>
+  <div class="heart-wrap">
+    <span class="heart one">♡</span><span class="heart two">✦</span><span class="heart three">♡</span>
+    <svg class="kitty" viewBox="0 0 360 300" role="img" aria-label="Hello Kitty com rosto branco, olhos pretos, nariz amarelo, bigodes pretos e laço rosa">
+      <defs>
+        <filter id="kittyGlow"><feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- Silhueta clássica: rosto branco e contorno preto -->
+      <path d="M62 116
+               Q55 88 62 60
+               Q68 30 91 31
+               Q116 32 151 53
+               Q174 45 195 53
+               Q220 30 249 31
+               Q277 31 286 60
+               Q297 87 293 116
+               Q311 142 304 178
+               Q295 230 249 249
+               Q218 264 180 264
+               Q142 264 111 249
+               Q65 230 56 178
+               Q50 143 62 116Z"
+            fill="#fffdfd" stroke="#080608" stroke-width="10" stroke-linejoin="round"/>
+      <!-- orelhas e pequenos detalhes do contorno -->
+      <path d="M66 111 Q75 95 84 83" fill="none" stroke="#080608" stroke-width="9" stroke-linecap="round"/>
+      <!-- Olhos ovais pretos, como no desenho original -->
+      <ellipse cx="119" cy="157" rx="8.5" ry="14" fill="#080608"/>
+      <ellipse cx="241" cy="157" rx="8.5" ry="14" fill="#080608"/>
+      <!-- nariz amarelo -->
+      <ellipse cx="180" cy="181" rx="9" ry="6.5" fill="#ffd52e" stroke="#080608" stroke-width="3"/>
+      <!-- bigodes pretos -->
+      <g fill="none" stroke="#080608" stroke-width="7" stroke-linecap="round">
+        <path d="M72 166 L32 157"/><path d="M70 184 L27 184"/><path d="M76 201 L40 216"/>
+        <path d="M288 166 L328 157"/><path d="M290 184 L333 184"/><path d="M284 201 L320 216"/>
+      </g>
+      <!-- laço rosa no topo à direita -->
+      <g filter="url(#kittyGlow)" stroke="#080608" stroke-width="8" stroke-linejoin="round">
+        <path d="M218 72 Q184 48 191 27 Q199 4 221 20 Q240 33 246 57
+                 Q272 30 294 43 Q318 58 298 80 Q280 99 250 89
+                 Q238 105 220 91 Q211 84 218 72Z" fill="#ff6fae"/>
+        <circle cx="239" cy="73" r="16" fill="#ff9bc7"/>
+      </g>
+      <path d="M205 31 Q221 37 228 55 M284 48 Q276 61 258 65" fill="none" stroke="#ffd6e7" stroke-width="4" stroke-linecap="round"/>
+      <!-- coraçõezinhos delicados nas bochechas -->
+      <g fill="#ff8fbd">
+        <path d="M135 213 C127 204 116 215 135 230 C154 215 143 204 135 213Z"/>
+        <path d="M225 213 C217 204 206 215 225 230 C244 215 233 204 225 213Z"/>
+      </g>
+    </svg>
+  </div>
+  <div class="type" id="typed">I love you, Alana ♡</div>
+  <button id="openBtn" type="button" onclick="window.openLetter&&window.openLetter()">♡ abrir minha cartinha ♡</button>
+  <section id="letter">
+    <h2>Pra minha Alana 🎀</h2>
+    <p>meu amor, eu te amo tanto q as vezes nem consigo explicar direito oq eu sinto por vc.. vc me faz tão feliz de um jeito q eu nunca vou conseguir explicar completamente, e eu só espero q eu consiga te fazer sentir tudo isso tbm, pq vc merece ser amada da forma mais linda desse mundo.</p>
+    <p>eu sou tão apaixonado por vc q n consigo me imaginar construindo minha vida com outra pessoa, quero vc hj, amanhã e em todos os dias da minha vida, quero construir nosso futuro juntinhos e realizar todos os nossos sonhos.</p>
+    <p>quando vc some por horas eu fico triste amor, pq eu sinto mt sua falta, fico querendo ouvir sua voz e falar minhas maluquices. eu queria tanto poder te encontrar logo, te encher de beijos, te abraçar bem forte e n querer te soltar nunca mais, passear de mãos dadas e ficar abraçadinho com vc sem me preocupar com a hora.</p>
+    <p>espero de coração q esse dia chegue logo, pq se dependesse de mim eu já tava aí te dando mil beijinhos no seu ouvidinho. obrigado por existir e por fazer meus dias tão felizes. eu n quero ser só alguém q passou pela sua vida, eu quero ser aquele q vai ficar, q vai te amar, cuidar de vc e escolher vc todos os dias.</p>
+    <p>eu te amo dms, minha vida, mais do q consigo colocar em palavras. nunca duvide do tamanho do amor q eu sinto por vc, tá bom?</p>
+    <p class="signature">eu te amo dms, minha vida ♡</p>
+  </section>
+  <div class="footer"><span class="sparkle">✦</span> FEITO COM AMOR, ESPECIALMENTE PRA ALANA <span class="sparkle">✦</span></div>
+</main>
+<script>
+(function(){
+ const starBox=document.getElementById('stars');
+ for(let i=0;i<32;i++){const s=document.createElement('span');s.className='star';s.textContent=['✦','✧','♡','·'][Math.floor(Math.random()*4)];s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.fontSize=(10+Math.random()*19)+'px';s.style.animationDelay=(Math.random()*3)+'s';starBox.appendChild(s)}
+ const rain=document.getElementById('rain');
+ for(let i=0;i<24;i++){const l=document.createElement('span');l.className='love';l.textContent=['I love you ♡','love you, Alana','eu te amo ♡','Alana ♥','♡ I love you ♡'][i%5];l.style.left=Math.random()*100+'%';l.style.animationDuration=(12+Math.random()*15)+'s';l.style.animationDelay=(-Math.random()*24)+'s';l.style.fontSize=(12+Math.random()*8)+'px';rain.appendChild(l)}
+ const falling=document.getElementById('falling');
+ for(let i=0;i<24;i++){const f=document.createElement('span');const isBow=i%3===0;f.className='fall-item '+(isBow?'bow':'heart');f.textContent=isBow?'🎀':['♡','♥','ღ'][i%3];f.style.left=Math.random()*100+'%';f.style.animationDuration=(12+Math.random()*15)+'s';f.style.animationDelay=(-Math.random()*25)+'s';f.style.fontSize=(16+Math.random()*15)+'px';falling.appendChild(f)}
+ const phrases=['I love you, Alana ♡','eu te amo, minha vida 🎀','you are my favorite person ♡','um milhão de vezes: eu te amo'];let p=0;
+ setInterval(()=>{p=(p+1)%phrases.length;const el=document.getElementById('typed');if(!el)return;el.style.opacity=0;setTimeout(()=>{el.textContent=phrases[p];el.style.opacity=1},300)},2600);
+ window.openLetter=function(){const letter=document.getElementById('letter');const btn=document.getElementById('openBtn');if(!letter||!btn)return;letter.classList.add('show');btn.textContent='♡ você é meu lugar favorito ♡';btn.disabled=true;for(let i=0;i<18;i++){const h=document.createElement('span');h.className='love';h.textContent=['♡','I love you','💗','Alana'][i%4];h.style.left=Math.random()*100+'%';h.style.animationDuration=(5+Math.random()*5)+'s';h.style.fontSize=(18+Math.random()*12)+'px';rain.appendChild(h)}setTimeout(()=>letter.scrollIntoView({behavior:'smooth',block:'center'}),120)};
+ const btn=document.getElementById('openBtn');if(btn){btn.addEventListener('click',window.openLetter);btn.addEventListener('touchend',function(e){e.preventDefault();window.openLetter()},{passive:false})}
+})();
+</script>
+</body>
+</html>
